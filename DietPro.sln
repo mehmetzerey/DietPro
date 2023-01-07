@@ -17,7 +17,36 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Domain", "src\serv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Infrastructure", "src\server\identity\Identity.Infrastructure\Identity.Infrastructure.csproj", "{79CDD36D-49A7-479B-88E1-481146A7A6DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Application", "src\server\identity\Identity.Application\Identity.Application.csproj", "{C49D4AF7-F22C-4726-9CE0-92A338E1962D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Application", "src\server\identity\Identity.Application\Identity.Application.csproj", "{C49D4AF7-F22C-4726-9CE0-92A338E1962D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{E1F7E69E-B29A-4F69-A86D-16BD5E69A5DD}"
+	ProjectSection(SolutionItems) = preProject
+		src\client\web\index.html = src\client\web\index.html
+		src\client\web\uyelerim.html = src\client\web\uyelerim.html
+		src\client\web\uyeolustur.html = src\client\web\uyeolustur.html
+		src\client\web\uyeprofil.html = src\client\web\uyeprofil.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{BCE000F2-F35F-436E-90CE-3332DAE594EF}"
+	ProjectSection(SolutionItems) = preProject
+		src\client\web\css\kit.css = src\client\web\css\kit.css
+		src\client\web\css\kit2.css = src\client\web\css\kit2.css
+		src\client\web\css\style.css = src\client\web\css\style.css
+		src\client\web\css\table.css = src\client\web\css\table.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{DAF3E815-6F9E-488B-B67D-5F2D0DF7EE12}"
+	ProjectSection(SolutionItems) = preProject
+		src\client\web\js\city.json = src\client\web\js\city.json
+		src\client\web\js\script.js = src\client\web\js\script.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{C62A8D62-6794-4231-83C0-60FF91372051}"
+	ProjectSection(SolutionItems) = preProject
+		src\client\web\assets\396-3965552_grey-silhouette-of-adult-body-standing.png = src\client\web\assets\396-3965552_grey-silhouette-of-adult-body-standing.png
+		src\client\web\assets\avatar.png = src\client\web\assets\avatar.png
+		src\client\web\assets\bg.jpg = src\client\web\assets\bg.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +82,10 @@ Global
 		{FAF83FE6-EFCE-4EC8-90B2-B0AA1B64283B} = {61B5E6A2-F9A3-4208-AB5D-C6E9156DCE49}
 		{79CDD36D-49A7-479B-88E1-481146A7A6DB} = {61B5E6A2-F9A3-4208-AB5D-C6E9156DCE49}
 		{C49D4AF7-F22C-4726-9CE0-92A338E1962D} = {61B5E6A2-F9A3-4208-AB5D-C6E9156DCE49}
+		{E1F7E69E-B29A-4F69-A86D-16BD5E69A5DD} = {28E8E5B4-1A3C-4F9E-B810-4DCD97AB7DBB}
+		{BCE000F2-F35F-436E-90CE-3332DAE594EF} = {E1F7E69E-B29A-4F69-A86D-16BD5E69A5DD}
+		{DAF3E815-6F9E-488B-B67D-5F2D0DF7EE12} = {E1F7E69E-B29A-4F69-A86D-16BD5E69A5DD}
+		{C62A8D62-6794-4231-83C0-60FF91372051} = {E1F7E69E-B29A-4F69-A86D-16BD5E69A5DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A8D699C-CBB3-4832-BD68-6D0487B4F7B3}
