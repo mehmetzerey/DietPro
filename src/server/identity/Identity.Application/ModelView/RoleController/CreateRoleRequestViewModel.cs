@@ -3,5 +3,5 @@
 public class CreateRoleRequestViewModel
 {
     [Required]
-    public string Role { get; set; }
+    public string Role { get; set; } = string.Empty;
 }

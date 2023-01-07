@@ -1,9 +1,12 @@
+using Identity.Infrastructure;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+builder.Services.AddInfrastructureRegistration(builder.Configuration);
 builder.Services.AddControllers();
 
 builder.Services.AddControllersWithViews()
