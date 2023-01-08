@@ -2,7 +2,7 @@
 
 public static class ServiceRegistration
 {
-    public static IServiceCollection AddIdentityServerConfig(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddInfastructureServiceRegistration(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<AppIdentityDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("IdentityConnectionString")));
