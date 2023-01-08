@@ -1,2 +1,10 @@
 ﻿global using Identity.Infrastructure;
 global using System.Globalization;
+global using Identity.Domain.Models;
+global using Identity.Domain;
+global using Microsoft.AspNetCore.Mvc;
+global using Identity.Application.ModelView;
+global using Identity.Application.Repository.User;
+global using Identity.Application.Authentication;
+global using Identity.Application.ModelView.RoleController;
+global using Identity.Application.Repository.Role;
