@@ -1,11 +1,14 @@
-﻿namespace Identity.Infrastructure;
+﻿using Identity.Infrastructure.Repository.Role;
+using Identity.Infrastructure.Repository.User;
+
+namespace Identity.Infrastructure;
 
 public static class ServiceRegistration
 {
     public static IServiceCollection AddInfastructureServiceRegistration(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<AppIdentityDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("IdentityConnectionString")));
+            options.UseSqlServer(configuration.GetConnectionString("IdentityConnectionString"), b => b.MigrationsAssembly("Identity.API")));
 
         // rol bazlı attribute lar çalışsın diye eklendi
         services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -36,7 +39,10 @@ public static class ServiceRegistration
             };
         });
 
-
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IReadUserRepository, ReadUserRepository>();
+        services.AddScoped<IWriteUserRepository, WriteUserRepository>();
+        services.AddScoped<IWriteRoleRepository, WriteRoleRepository>();
         return services;
     }
 }

@@ -25,3 +25,6 @@ global using System.Linq.Expressions;
 global using System.Security.Claims;
 global using System.Text;
 global using System.Threading.Tasks;
+global using Identity.Application.Authentication;
+global using IdentityModel;
+global using Identity.Infrastructure.Authentication;
