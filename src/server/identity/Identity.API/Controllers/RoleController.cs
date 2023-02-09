@@ -15,7 +15,7 @@ public class RoleController : ControllerBase
 
     // POST api/<RoleController>
     [HttpPost]
-    public async Task<ActionResult> Create([FromBody] CreateRoleRequestViewModel createRoleRequest)
+    public async Task<IActionResult> Create([FromBody] CreateRoleRequestViewModel createRoleRequest)
     {
         if (ModelState.IsValid == false)
         {

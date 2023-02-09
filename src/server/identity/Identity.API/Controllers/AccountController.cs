@@ -16,7 +16,8 @@ namespace Identity.API.Controllers
         }
 
         // POST: api/<AccountController>
-        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
 
             #region Validate model
@@ -43,7 +44,7 @@ namespace Identity.API.Controllers
         // POST api/<AccountController>
         [HttpPost]
         [Route("Login")]
-        public async Task<ActionResult> Login([FromBody] LoginViewModel model)
+        public async Task<IActionResult> Login([FromBody] LoginViewModel model)
         {
             #region Validate
 
@@ -57,18 +58,6 @@ namespace Identity.API.Controllers
             #endregion
             var result = await _authService.SignInAsync(model.Email, model.Password, false, false);
             return Ok(result);
-        }
-
-        // PUT api/<AccountController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<AccountController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+
+  service_sqlserver:
+    container_name: c_sqlserver
+    image: mcr.microsoft.com/mssql/server:2019-latest
+
+  identity.api:
+    image: ${DOCKER_REGISTRY-}identityapi
+    build:
+      context: .
+      dockerfile: src/server/identity/Identity.API/Dockerfile
+
+  diet.api:
+    image: ${DOCKER_REGISTRY-}dietapi
+    build:
+      context: .
+      dockerfile: src/server/diet/Diet.API/Dockerfile
+

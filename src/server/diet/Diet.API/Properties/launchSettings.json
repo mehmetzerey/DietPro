@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Identity.API": {
+    "Diet.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:50010"
+      "applicationUrl": "http://localhost:50011"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -22,8 +22,7 @@
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "publishAllPorts": true,
-      "useSSL": false
+      "publishAllPorts": true
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
@@ -31,7 +30,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:50010",
+      "applicationUrl": "http://localhost:50011",
       "sslPort": 0
     }
   }
