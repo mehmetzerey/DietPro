@@ -85,7 +85,7 @@ public class TokenProvider
                 //Kullanıcıya ait önceden oluşturulmuş bir token var mı kontrol edilir.
                 if (_context.ApplicationUserTokens.Count(x => x.UserId == _applicationUser.Id.ToString()) > 0)
                 {
-                    ApplicationUserToken userTokens = userTokens = _context.ApplicationUserTokens.FirstOrDefault(x => x.UserId == _applicationUser.Id.ToString());
+                    var userTokens = _context.ApplicationUserTokens.FirstOrDefault(x => x.UserId == _applicationUser.Id.ToString());
 
                     _context.ApplicationUserTokens.Remove(userTokens);
                 }

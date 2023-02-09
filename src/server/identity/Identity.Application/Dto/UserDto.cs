@@ -20,22 +20,22 @@ public class UserDto
     /// <summary>
     /// Gets or sets the user name for this user.
     /// </summary>
-    public virtual string UserName { get; set; }
+    public virtual string UserName { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets the normalized user name for this user.
     /// </summary>
-    public virtual string NormalizedUserName { get; set; }
+    public virtual string NormalizedUserName { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets the email address for this user.
     /// </summary>
-    public virtual string Email { get; set; }
+    public virtual string Email { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets the normalized email address for this user.
     /// </summary>
-    public virtual string NormalizedEmail { get; set; }
+    public virtual string NormalizedEmail { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets a flag indicating if a user has confirmed their email address.
@@ -46,12 +46,12 @@ public class UserDto
     /// <summary>
     /// Gets or sets a salted and hashed representation of the password for this user.
     /// </summary>
-    public virtual string PasswordHash { get; set; }
+    public virtual string PasswordHash { get; set; } = string.Empty;
 
     /// <summary>
     /// A random value that must change whenever a users credentials change (password changed, login removed)
     /// </summary>
-    public virtual string SecurityStamp { get; set; }
+    public virtual string SecurityStamp { get; set; } = string.Empty;
 
     /// <summary>
     /// A random value that must change whenever a user is persisted to the store
@@ -61,7 +61,7 @@ public class UserDto
     /// <summary>
     /// Gets or sets a telephone number for the user.
     /// </summary>
-    public virtual string PhoneNumber { get; set; }
+    public virtual string PhoneNumber { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets a flag indicating if a user has confirmed their telephone address.
