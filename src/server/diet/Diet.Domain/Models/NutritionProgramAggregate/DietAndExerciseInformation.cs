@@ -1,4 +1,6 @@
-﻿namespace Diet.Domain.Models.PersonalAggregate;
+﻿using Diet.Domain.Models.PatientAggregate;
+
+namespace Diet.Domain.Models.NutritionProgramAggregate;
 
 public class DietAndExerciseInformation : BaseEntity
 {

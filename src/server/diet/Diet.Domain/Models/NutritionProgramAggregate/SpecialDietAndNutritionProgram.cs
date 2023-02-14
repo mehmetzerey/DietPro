@@ -1,4 +1,4 @@
-﻿namespace Diet.Domain.Models.PersonalAggregate;
+﻿namespace Diet.Domain.Models.NutritionProgramAggregate;
 
 public class SpecialDietAndNutritionProgram : BaseEntity
 {

@@ -1,4 +1,4 @@
-﻿namespace Diet.Domain.Models.PersonalAggregate;
+﻿namespace Diet.Domain.Models.PatientAggregate;
 
 public class EatingHabits : BaseEntity
 {
